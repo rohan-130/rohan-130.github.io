@@ -130,7 +130,7 @@
                 var wordName = document.getElementById("wordName").value;
                 $.ajax({
                    type: 'POST',
-                   url: 'http://127.0.0.1:8000/train-word/',
+                   url: 'http://ec2-18-219-89-25.us-east-2.compute.amazonaws.com:8000/train-word/',
                    data: { vector: landmarksArray, count: newCount, wordName: wordName  },
                    success: function(res){
                            console.log(res);
